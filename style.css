@@ -1,0 +1,298 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+    
+    position: relative;
+}
+body::after{
+    content: " ";
+    background: url(./bg/whiteBg2.png);
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -100;
+}
+section {
+    margin-bottom: 170px;
+}
+
+.cont {
+    width: 80%;
+    margin: auto;
+}
+
+.sec-1 {
+    height: 110px;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.div-logo {
+    height: 90px;
+    width: 200px;
+}
+
+.div-logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.inputOneNav {
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 15px;
+}
+
+.srchBtn {
+    height: 40px;
+    width: 40px;
+    background-color: #e8cd99;
+    border-radius: 50%;
+    /* z-index: 2; */
+    position: absolute;
+    right: 3px;
+    border: 0;
+}
+
+.fa-border i {
+    color: black;
+    font-size: 15px;
+}
+
+.icon-fb-whatsapp i {
+    font-size: 30px;
+}
+#nav2{
+    height: 50px;
+    display: flex;
+}
+#nav2 a{
+    text-decoration: none;
+    color: wheat;
+}
+.indiBtn {
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255) !important;
+    background-color: transparent !important;
+    position: relative;
+}
+#nav-sm{
+    display: none;
+}
+/* .carousel-inner{
+    border: 5px solid red;
+    height: 700px;
+}
+.carousel-item{
+    border: 10px solid ;
+    height: 700px!important;
+}
+.carousel-item img{
+    height: inherit;
+} */
+.indiBtn::after {
+    position: absolute;
+    /* content: " "; */
+    content: " ";
+    background: url(./logo/UniCrown-logo-finalpng.png) no-repeat center;
+    background-size: 15px auto;
+    height: 100%;
+    width: 100%;
+    filter: brightness(200%) saturate(800%) contrast(200%);
+    /* border: 1px solid red; */
+    /* background-color: red; */
+    top: 0;
+    left: 0;
+}
+
+.recommended {
+    min-height: 500px;
+}
+
+.recommended h1 {
+    width: 80%;
+    margin: auto;
+    height: 80px;
+    border-radius: 10px;
+    /* border: 4px solid rgba(0, 0, 0, 0.753); */
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.178); */
+}
+#recomGridMother{
+    position: relative;
+}
+#recomMask{
+    position: absolute;
+    width: 100%;
+    height: 200vh;
+    top: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.096),rgba(255, 255, 255, 0.096),rgba(255, 255, 255, 0.096),rgba(255, 255, 255, 0.096), white);
+}
+#recomGrid{
+    /* border: 1px solid red; */
+    height: 200vh;
+    overflow:hidden ;
+    
+}
+#goTop{
+    display: none;
+}
+.col {
+    /* border: 1px solid ; */
+    margin-block: 40px;
+    /* height: 350px; */
+}
+
+.col img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+}
+
+.col-in img:hover {
+    transform: scale(2.5);
+}
+
+.col-in {
+    border: 1px solid rgba(211, 211, 211, 0.452);
+    width: 95%;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 0 30px lightgray;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+.col-in button{
+    margin-top: 20px;
+}
+.btn.btn-warning.fw-semibold a {
+    text-decoration: none;
+    color: black;
+}
+
+.upcoming {
+    min-height: 400px;
+}
+
+.optionBtn{
+    height: 40px;
+    width: 200px;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    background: transparent;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+#blackColl{
+    display: none;
+}
+#whiteBtn{
+    background-color: black;
+    color: white;
+}
+#newsBox{
+    height: 300px;
+    width:60% ;
+    padding: 45px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.267);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+#newsBox input{
+    height: 30px;
+    width: 200px;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+#newsBox button{
+    height: 40px;
+    width: 80px;
+    
+}
+.whyCont{
+    padding-top: 100px;
+}
+.whyBox{
+    border: 1px solid gray;
+    height: 550px;
+    width: 25%;
+    box-shadow:0 20px 10px -10px lightgray;
+}
+.whyBox img{
+    width: 100px;
+}
+footer{
+    /* border: 1px solid red; */
+    min-height: 300px;
+}
+.f-left{
+    height: 200px;
+    border-right: 1px solid wheat;
+}
+@media only screen and (min-width:250px) and (max-width: 688px){
+	/*Big smartphones [426px -> 600px]*/
+    #nav-lg, #nav2{
+        display: none!important;
+    }
+    #nav-sm{
+        display: block;
+        background-color: black;
+    }
+    #logo-sm{
+        width: 100px;
+    }
+    .navbar-toggler{
+        background-color: white;
+    }
+    .nav-item a{
+        color: wheat;
+    }
+    #newsBox{
+        width: 100%;
+    }
+    .whyCont{
+        flex-direction:column ;
+    }
+    .whyBox{
+        width: 100%;
+        margin-top: 40px;
+        height: 540px;
+        /* background-color: red; */
+    }
+    .f-cont-in{
+        flex-direction: column;
+    }
+    .f-left,.f-right{
+        border-right: 0;
+        width: 100%!important;
+    }
+}
+@media only screen and (min-width:689px) and (max-width:992px){
+    .whyCont{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    .whyBox{
+        width: 100%;
+        margin-top: 40px;
+        height: 350px;
+        /* background-color: red; */
+    }
+}
